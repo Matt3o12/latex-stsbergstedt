@@ -1,15 +1,20 @@
-\documentclass[a4paper]{article}
+\documentclass[12pt,a4paper]{article}
 
 \usepackage[ngerman]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[autostyle=true,german=quotes]{csquotes}
+\usepackage[a4paper, left=2.5cm, right=4.1cm, top=2.5cm, bottom=2cm]{geometry}
+\usepackage{fontspec}
+\usepackage{setspace}
 \usepackage{amsmath}
 \usepackage{a4wide}
 \usepackage{fancyhdr}
 \usepackage{lastpage}
+\usepackage{blindtext}
 
+\setmainfont{Arial}
+\onehalfspacing
 \newcommand{\creationDate}{01.01.2000}
-
 % Header footer stuff %
 \fancypagestyle{plain}{
    \fancyhf{}
@@ -17,11 +22,11 @@
 }
 
 \pagestyle{fancy}
-\setlength{\headheight}{35pt}
+\setlength{\headheight}{43pt}
 \fancyhf{}
 \rhead{
     Matteo Kloiber\\
-    Fach: Thema\\
+    Geschichte: Thema\\
     Datum: \creationDate
 }
 \rfoot{Seite \thepage{} von \pageref{LastPage}}
@@ -38,18 +43,18 @@
 \maketitle
 
 \begin{abstract}
-    Abstract here test
+    Zusammenfassung und Foto hier.
 \end{abstract}
 
 \newpage
 \tableofcontents
 \newpage
 
-\section{Sektion 1}
-Inhalt Sektion 1 
+\section*{Sektion 1}
+\Blindtext
 
-\section{Sektion 2}
-Sektion 2
+\section*{Sektion 2}
+\blindtext
 
 \end{document}
 
