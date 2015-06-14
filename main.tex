@@ -1,0 +1,58 @@
+\documentclass[a4paper]{article}
+
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[autostyle=true,german=quotes]{csquotes}
+\usepackage{amsmath}
+\usepackage{a4wide}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\newcommand{\creationDate}{01.01.2000}
+
+% Header footer stuff %
+\fancypagestyle{plain}{
+   \fancyhf{}
+   \fancyfoot[R]{Seite \thepage{} von \pageref{LastPage}}
+}
+
+\pagestyle{fancy}
+\setlength{\headheight}{35pt}
+\fancyhf{}
+\rhead{
+    Matteo Kloiber\\
+    Fach: Thema\\
+    Datum: \creationDate
+}
+\rfoot{Seite \thepage{} von \pageref{LastPage}}
+
+\renewcommand{\headrulewidth}{0pt}
+% End Header Stuff %
+
+\title{Name (Template)}
+\author{Matteo Kloiber}
+\date{\creationDate}
+
+\begin{document}
+    \thispagestyle{fancy}
+\maketitle
+
+\begin{abstract}
+    Abstract here test
+\end{abstract}
+
+\newpage
+\tableofcontents
+\newpage
+
+\section{Sektion 1}
+Inhalt Sektion 1 
+
+\section{Sektion 2}
+Sektion 2
+
+\end{document}
+
+
+\end{document}
+
